@@ -1,12 +1,16 @@
 
 import java.util.Scanner;
 
-public class Main {
+class Main {
     public static void main(String[] args) throws Exception {
-
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
-        String[] subStr = str.split(" ");
+        System.out.println(calc(str));
+    }
+
+    static String calc(String input) throws Exception {
+
+        String[] subStr = input.split(" ");
         if (subStr.length != 3) {
             throw new Exception("строка не является математической операцией");
 
@@ -40,13 +44,13 @@ public class Main {
         }
         int finalValue = calculateValue(number1, number2, arifmeticOperationType);
         if (numbersType1 == 1) {
-            System.out.println(RomeNumbers.getRomeNumbers(finalValue));
+            return RomeNumbers.getRomeNumbers(finalValue);
         } else {
-            System.out.println(finalValue);
+            return String.valueOf(finalValue);
         }
     }
 
-    public static int getNumber(String numberStr, int numberType) {
+    static int getNumber(String numberStr, int numberType) {
         int number = 0;
 
         if (numberType == 1) {
@@ -58,7 +62,7 @@ public class Main {
     }
 
 
-    private static int calculateValue(int number1, int number2, int arifmeticOperationType) throws Exception {
+    static int calculateValue(int number1, int number2, int arifmeticOperationType) throws Exception {
         int finalValue = 0;
         switch (arifmeticOperationType) {
             case (0):
@@ -66,7 +70,7 @@ public class Main {
                 break;
             case (1):
                 finalValue = number1 - number2;
-            break;
+                break;
             case (2):
                 finalValue = number1 * number2;
                 break;
@@ -79,7 +83,7 @@ public class Main {
 
     }
 
-    private static int itCorrectNumbers(String strNumber) {
+    static int itCorrectNumbers(String strNumber) {
         int numbersType = -1;
 
         if (ArabNumbers.thisArabicNums(strNumber)) {
