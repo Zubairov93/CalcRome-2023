@@ -1,17 +1,18 @@
 public class ArifmeticOperations {
 
+
     public static int getArifmeticOperationType(String ArifmeticOperation){
         int ArifmeticOperationType = -1;
 
         switch (ArifmeticOperation){
             case ("+"): ArifmeticOperationType = 0;
-            break;
+                break;
             case ("-"): ArifmeticOperationType = 1;
-            break;
+                break;
             case ("*"): ArifmeticOperationType = 2;
-            break;
+                break;
             case ("/"): ArifmeticOperationType = 3;
-            break;
+                break;
         }
         return ArifmeticOperationType;
     }

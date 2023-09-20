@@ -1,4 +1,5 @@
 public class RomeNumbers {
+
     public static int getArabNumber(String romeNumber){
         int arabNumber = 0;;
 
@@ -85,7 +86,7 @@ public class RomeNumbers {
         String romeNumber  = " ";
         switch(arabNumber){
             case("1"): romeNumber = "I";
-            break;
+                break;
             case("2"): romeNumber = "II";
                 break;
             case("3"): romeNumber = "III";
@@ -113,7 +114,7 @@ public class RomeNumbers {
 
         switch (strNumber){
             case("I"): thisIsRomeNumbers = true;
-            break;
+                break;
             case("II"): thisIsRomeNumbers = true;
                 break;
             case("III"): thisIsRomeNumbers = true;
