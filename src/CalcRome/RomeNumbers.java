@@ -27,9 +27,12 @@ public class RomeNumbers {
         }
         return arabNumber;
     }
-    public static String getRomeNumbers(int numbers){
+    public static String getRomeNumbers(int numbers) throws Exception{
         String romeNumbers = "";
-        if(numbers >=100){
+        if (numbers <=0 ){
+            throw new Exception("в римской системе нет отрицательных чисел");
+        }
+         if(numbers >=100){
             romeNumbers = "C";
             int difference = numbers-100;
             romeNumbers = romeNumbers + getRomeNumber(Integer.toString(difference));
