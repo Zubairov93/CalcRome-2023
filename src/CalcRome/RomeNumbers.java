@@ -1,6 +1,6 @@
-public class RomeNumbers {
+ class RomeNumbers {
 
-    public static int getArabNumber(String romeNumber){
+     static int getArabNumber(String romeNumber){
         int arabNumber = 0;;
 
         switch (romeNumber){
@@ -27,7 +27,7 @@ public class RomeNumbers {
         }
         return arabNumber;
     }
-    public static String getRomeNumbers(int numbers) throws Exception{
+     static String getRomeNumbers(int numbers) throws Exception{
         String romeNumbers = "";
         if (numbers <=0 ){
             throw new Exception("в римской системе нет отрицательных чисел");
@@ -85,7 +85,7 @@ public class RomeNumbers {
         return romeNumbers;
     }
 
-    private static String getRomeNumber(String arabNumber) {
+     static String getRomeNumber(String arabNumber) {
         String romeNumber  = " ";
         switch(arabNumber){
             case("1"): romeNumber = "I";
@@ -112,7 +112,7 @@ public class RomeNumbers {
         return romeNumber;
 
     }
-    public static boolean thisIsRomeNumbers(String strNumber){
+     static boolean thisIsRomeNumbers(String strNumber){
         boolean thisIsRomeNumbers = false;
 
         switch (strNumber){

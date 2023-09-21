@@ -1,5 +1,5 @@
-public class ArabNumbers {
-    public static boolean thisArabicNums(String strNumber){
+ class ArabNumbers {
+     static boolean thisArabicNums(String strNumber){
 
         boolean thisArabicNums = true;
 
@@ -17,7 +17,7 @@ public class ArabNumbers {
 
 
 
-    public static boolean thisArabNumber(char strNum){
+     static boolean thisArabNumber(char strNum){
         boolean isArabNumber = false;
 
         switch (strNum) {
