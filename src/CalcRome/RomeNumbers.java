@@ -27,7 +27,7 @@
         }
         return arabNumber;
     }
-     static String getRomeNumbers(int numbers) throws Exception{
+     public static String getRomeNumbers(int numbers) throws Exception{
         String romeNumbers = "";
         if (numbers <=0 ){
             throw new Exception("в римской системе нет отрицательных чисел");
@@ -85,7 +85,7 @@
         return romeNumbers;
     }
 
-     static String getRomeNumber(String arabNumber) {
+     public static String getRomeNumber(String arabNumber) {
         String romeNumber  = " ";
         switch(arabNumber){
             case("1"): romeNumber = "I";
@@ -112,7 +112,7 @@
         return romeNumber;
 
     }
-     static boolean thisIsRomeNumbers(String strNumber){
+     public static boolean thisIsRomeNumbers(String strNumber){
         boolean thisIsRomeNumbers = false;
 
         switch (strNumber){

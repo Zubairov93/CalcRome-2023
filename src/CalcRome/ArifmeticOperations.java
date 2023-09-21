@@ -1,7 +1,7 @@
- class ArifmeticOperations {
+public class ArifmeticOperations {
 
 
-     static int getArifmeticOperationType(String ArifmeticOperation){
+    public static int getArifmeticOperationType(String ArifmeticOperation){
         int ArifmeticOperationType = -1;
 
         switch (ArifmeticOperation){

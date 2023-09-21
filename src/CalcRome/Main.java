@@ -8,7 +8,7 @@ class Main {
         System.out.println(calc(str));
     }
 
-    static String calc(String input) throws Exception {
+    public static String calc(String input) throws Exception {
 
         String[] subStr = input.split(" ");
         if (subStr.length != 3) {
@@ -50,7 +50,7 @@ class Main {
         }
     }
 
-    static int getNumber(String numberStr, int numberType) {
+    public static int getNumber(String numberStr, int numberType) {
         int number = 0;
 
         if (numberType == 1) {
@@ -62,7 +62,7 @@ class Main {
     }
 
 
-    static int calculateValue(int number1, int number2, int arifmeticOperationType) throws Exception {
+    public static int calculateValue(int number1, int number2, int arifmeticOperationType) throws Exception {
         int finalValue = 0;
         switch (arifmeticOperationType) {
             case (0):
@@ -83,7 +83,7 @@ class Main {
 
     }
 
-    static int itCorrectNumbers(String strNumber) {
+    public  static int itCorrectNumbers(String strNumber) {
         int numbersType = -1;
 
         if (ArabNumbers.thisArabicNums(strNumber)) {
